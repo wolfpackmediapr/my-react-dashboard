@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import { Bell, BarChart2, AlertCircle, MessageSquare, Users, HelpCircle, Upload, FileText, Video, Radio, Newspaper, Send } from 'lucide-react';
 
-const Sidebar = ({ activeItem, setActiveItem }) => {
-  const menuItems = [
+// Define the type for the menu items
+type MenuItem = {
+  name: string;
+  icon: React.ComponentType<any>;
+};
+
+// Define the type for the Sidebar props
+interface SidebarProps {
+  activeItem: string;
+  setActiveItem: (item: string) => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
+  const menuItems: MenuItem[] = [
     { name: 'Dashboard Home', icon: BarChart2 },
     { name: 'Real-Time Notifications', icon: Bell },
     { name: 'Categorized Alerts', icon: AlertCircle },
@@ -38,7 +50,12 @@ const Sidebar = ({ activeItem, setActiveItem }) => {
   );
 };
 
-const Header = ({ activeItem }) => {
+// Define the type for the Header props
+interface HeaderProps {
+  activeItem: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ activeItem }) => {
   return (
     <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
       <h1 className="text-xl font-semibold">{activeItem}</h1>
@@ -59,7 +76,7 @@ const Header = ({ activeItem }) => {
   );
 };
 
-const DashboardHome = () => {
+const DashboardHome: React.FC = () => {
   return (
     <div className="p-6">
       <div className="grid grid-cols-3 gap-6 mb-6">
@@ -88,31 +105,37 @@ const DashboardHome = () => {
   );
 };
 
-const RealTimeNotifications = () => {
+const RealTimeNotifications: React.FC = () => {
   // Implementation for Real-Time Notifications
+  return <div>Real-Time Notifications</div>;
 };
 
-const CategorizedAlerts = () => {
+const CategorizedAlerts: React.FC = () => {
   // Implementation for Categorized Alerts
+  return <div>Categorized Alerts</div>;
 };
 
-const ResponseManagement = () => {
+const ResponseManagement: React.FC = () => {
   // Implementation for Response Management
+  return <div>Response Management</div>;
 };
 
-const UserManagement = () => {
+const UserManagement: React.FC = () => {
   // Implementation for User Management
+  return <div>User Management</div>;
 };
 
-const ReportsAnalytics = () => {
+const ReportsAnalytics: React.FC = () => {
   // Implementation for Reports and Analytics
+  return <div>Reports and Analytics</div>;
 };
 
-const HelpSupport = () => {
+const HelpSupport: React.FC = () => {
   // Implementation for Help and Support
+  return <div>Help and Support</div>;
 };
 
-const BotRadio = () => {
+const BotRadio: React.FC = () => {
   return (
     <div className="p-6">
       <div className="bg-gray-800 p-4 rounded-lg shadow mb-6">
@@ -136,7 +159,7 @@ const BotRadio = () => {
   );
 };
 
-const BotPrensa = () => {
+const BotPrensa: React.FC = () => {
   return (
     <div className="p-6">
       <div className="bg-gray-800 p-4 rounded-lg shadow mb-6">
@@ -160,7 +183,7 @@ const BotPrensa = () => {
   );
 };
 
-const BotTv = () => {
+const BotTv: React.FC = () => {
   return (
     <div className="p-6">
       <div className="bg-gray-800 p-4 rounded-lg shadow mb-6">
@@ -184,12 +207,13 @@ const BotTv = () => {
   );
 };
 
-const BotSendEmails = () => {
+const BotSendEmails: React.FC = () => {
   // Implementation for BOT SEND EMAILS
+  return <div>BOT SEND EMAILS</div>;
 };
 
-const Dashboard = () => {
-  const [activeItem, setActiveItem] = useState('Dashboard Home');
+const Dashboard: React.FC = () => {
+  const [activeItem, setActiveItem] = useState<string>('Dashboard Home');
 
   const renderContent = () => {
     switch (activeItem) {
