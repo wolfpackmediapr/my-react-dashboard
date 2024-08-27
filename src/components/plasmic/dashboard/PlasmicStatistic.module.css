@@ -1,0 +1,204 @@
+.root {
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
+  background: #fdfdfd;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+.slotTargetUnit {
+  font-size: 36px;
+}
+.freeBox__ins0Y {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  min-width: 0;
+  padding: 0px;
+}
+.p__oX34U {
+  color: var(--token-mIG78lQX6vkL);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1.1%;
+}
+.img__vE1R {
+  object-fit: cover;
+  max-width: 28px;
+  max-height: 28px;
+  position: relative;
+}
+.img__vE1R > picture > img {
+  object-fit: cover;
+}
+.imghideIcon__vE1R0UChj {
+  display: none !important;
+}
+.freeBox__aqf2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__aqf2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__aqf2 > :global(.__wab_flex-container) > *,
+.freeBox__aqf2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__aqf2 > :global(.__wab_flex-container) > picture > img,
+.freeBox__aqf2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.freeBox__kVOqM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  opacity: 1;
+  min-width: 0;
+  padding: 8px 0px 0px;
+}
+.text__ocXge {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.h2__ouSe7 {
+  color: var(--token-iSB4sDWi7J33);
+}
+.freeBox__uISwT {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__smFM {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__smFM > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.freeBox__smFM > :global(.__wab_flex-container) > *,
+.freeBox__smFM > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__smFM > :global(.__wab_flex-container) > picture > img,
+.freeBox__smFM
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.freeBoxhideTrendTracker__smFMr8Nn8 {
+  display: none;
+}
+.freeBox__fFz1N {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  background: none;
+  align-self: center;
+  border-radius: 10px;
+  padding: 0px;
+}
+.freeBox__mwAqi {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.slotTargetNumberTrend {
+  color: var(--token-6UJ64LOQ0CV-);
+  letter-spacing: 0%;
+  font-size: 12px;
+  line-height: 16px;
+}
+.freeBox__c6PJ {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.freeBox__hbKmS {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetTimeRange {
+  color: var(--token-Hr_KNEfib53W);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
