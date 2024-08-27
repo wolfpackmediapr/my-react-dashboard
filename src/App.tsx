@@ -1,11 +1,10 @@
 import React from 'react';
-import SaasDashboard from './components/saas-dashboard';
-import './App.css';
+import Dashboard from './components/saas-dashboard';
 
 function App() {
   return (
     <div className="App">
-      <SaasDashboard />
+      <Dashboard />
     </div>
   );
 }
