@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Bell, BarChart2, AlertCircle, MessageSquare, Users, HelpCircle, Upload, FileText, Video, Radio, Newspaper, Send } from 'lucide-react';
 
-interface SidebarProps {
+type SidebarProps = {
   activeItem: string;
-  setActiveItem: (item: string) => void;
-}
+  setActiveItem: React.Dispatch<React.SetStateAction<string>>;
+};
 
 const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
   const menuItems = [
@@ -23,6 +23,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
 
   return (
     <div className="w-16 bg-gray-900 text-gray-400 h-screen flex flex-col items-center py-4">
+      <div className="mb-8">
+        <img src="/logo.png" alt="Logo" className="w-8 h-8" />
+      </div>
       <nav>
         {menuItems.map((item) => (
           <button
@@ -40,18 +43,4 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
   );
 };
 
-const Dashboard: React.FC = () => {
-  const [activeItem, setActiveItem] = useState<string>('Dashboard Home');
-
-  return (
-    <div className="flex h-screen bg-gray-900 text-white">
-      <Sidebar activeItem={activeItem} setActiveItem={setActiveItem} />
-      <div className="flex-1 p-10">
-        <h1 className="text-3xl font-bold mb-5">{activeItem}</h1>
-        <p>Content for {activeItem} goes here.</p>
-      </div>
-    </div>
-  );
-};
-
-export default Dashboard;
+export default Sidebar;
