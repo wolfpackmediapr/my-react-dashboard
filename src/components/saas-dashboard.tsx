@@ -10,7 +10,7 @@ type MenuItem = {
 // Define the type for the Sidebar props
 interface SidebarProps {
   activeItem: string;
-  setActiveItem: (item: string) => void;
+  setActiveItem: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ activeItem, setActiveItem }) => {
